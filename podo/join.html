@@ -1,0 +1,169 @@
+<!doctype html>
+<!-- 포도 비공개 테스트 참여 안내 — 카톡으로 이 페이지 주소를 보냅니다.
+     카톡 안(인앱 브라우저)에서 열리면 구글 로그인이 안 되므로, 「크롬으로 열기」 단추가
+     kakaotalk://web/openExternal 로 바깥 브라우저를 띄웁니다. 크롬에서는 바로 참여 페이지로. -->
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>포도 · 테스터 참여 안내</title>
+<meta name="description" content="새 퍼즐 게임 「포도」 비공개 테스트 참여 안내">
+<meta property="og:title" content="포도 · 테스터 참여 안내">
+<meta property="og:description" content="단추 하나씩 누르면 됩니다 — 1분이면 끝나요">
+<style>
+  :root{--paper:#EDE8DB;--panel:#F7F3E9;--card:#FBF8F1;--ink:#22201B;--ink2:#555147;--ink3:#8A8478;
+    --dye:#6B3A52;--rim:#D5CCB8;--ok:#4F6147}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Malgun Gothic","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.65;
+    -webkit-text-size-adjust:100%}
+  .w{max-width:480px;margin:0 auto;padding:22px 16px 40px}
+  .head{display:flex;align-items:center;gap:14px;margin:6px 4px 18px}
+  .logo{width:52px;height:52px;flex:none}
+  h1{font-family:"Batang","Nanum Myeongjo",serif;font-size:30px;margin:0;line-height:1.1}
+  .sub{color:var(--dye);font-weight:600;font-size:14px;margin-top:4px}
+  .lead{background:var(--panel);border:1px solid var(--rim);border-radius:14px;padding:16px 18px;font-size:15.5px;margin-bottom:16px}
+  .lead b{color:var(--dye)}
+  .step{background:var(--panel);border:1px solid var(--rim);border-radius:14px;padding:18px;margin-bottom:12px}
+  .step.hi{border:2px solid var(--dye);box-shadow:0 4px 14px rgba(107,58,82,.12)}
+  .step.done{opacity:.55}
+  .num{display:inline-flex;width:28px;height:28px;border-radius:50%;background:var(--dye);color:#fff;
+    font-weight:700;align-items:center;justify-content:center;font-size:15px;margin-right:8px;vertical-align:middle}
+  .st{font-size:17px;font-weight:700;vertical-align:middle}
+  .desc{margin:8px 0 0;font-size:14.5px;color:var(--ink2)}
+  .btn{display:block;width:100%;margin-top:14px;padding:17px 14px;border:0;border-radius:12px;
+    background:var(--ink);color:#F7F3E9;font:inherit;font-size:18px;font-weight:700;text-align:center;
+    text-decoration:none;cursor:pointer}
+  .btn.alt{background:var(--card);color:var(--ink);border:1.5px solid var(--ink)}
+  .btn .arw{margin-left:6px}
+  .shot{margin-top:12px;background:var(--card);border:1px dashed var(--rim);border-radius:10px;padding:12px 14px;
+    font-size:14px;color:var(--ink2)}
+  .fake{display:inline-block;background:#1a73e8;color:#fff;border-radius:6px;padding:3px 10px;font-weight:700;font-size:13.5px}
+  .fake.g{background:#01875f}
+  .mock{margin-top:12px;background:#fff;border:1px solid #dadce0;border-radius:10px;overflow:hidden;
+    font-family:Roboto,Arial,"Malgun Gothic",sans-serif;color:#3c4043}
+  .mtop{background:#f1f3f4;padding:7px 12px;font-size:12px;color:#5f6368;display:flex;align-items:center;gap:6px}
+  .mdot{width:8px;height:8px;border-radius:50%;background:#bdc1c6}
+  .mbody{padding:14px 16px 10px}
+  .mh{font-size:17px;color:#202124;margin-bottom:8px}
+  .mt{font-size:13.5px;line-height:1.6}
+  .mt.dim{color:#9aa0a6;margin-top:8px}
+  .mlink{color:#1a73e8;text-decoration:underline;font-weight:600;padding:2px 4px;margin:0 2px 0 -4px;
+    border:3px solid #E8710A;border-radius:999px;box-shadow:0 0 0 4px rgba(232,113,10,.18)}
+  .mcall{background:#FFF4E5;color:#B25400;font-weight:700;font-size:14px;padding:8px 14px;border-top:1px solid #F5D3A8}
+  .note{font-size:13.5px;color:var(--ink2);margin:18px 4px 0;padding-left:16px}
+  .note li{margin-bottom:6px}
+  .lang{float:right;font-size:13px;color:var(--ink3);background:none;border:1px solid var(--rim);border-radius:20px;padding:4px 12px;cursor:pointer;font-family:inherit}
+  .url{font-family:Consolas,monospace;font-size:12px;color:var(--ink3);word-break:break-all;text-align:center;margin-top:8px}
+  [data-en]{display:none} body.en [data-en]{display:block} body.en [data-ko]{display:none}
+  body.en span[data-en],body.en b[data-en]{display:inline}
+  .foot{text-align:center;color:var(--ink3);font-size:12px;margin-top:26px}
+</style></head>
+<body>
+<div class="w">
+  <button class="lang" id="lang" type="button">English</button>
+  <div class="head">
+    <svg class="logo" viewBox="0 0 32 32" aria-hidden="true">
+      <rect x="14.4" y="2" width="3.2" height="7" rx="1.6" fill="#22201B"/>
+      <circle cx="10.6" cy="13" r="6" fill="#FBF8F1" stroke="#22201B" stroke-width="2"/>
+      <circle cx="21.4" cy="13" r="6" fill="#6B3A52" stroke="#22201B" stroke-width="2"/>
+      <circle cx="16" cy="22.4" r="6" fill="#FBF8F1" stroke="#22201B" stroke-width="2"/>
+    </svg>
+    <div><h1>포도</h1><div class="sub"><span data-ko>비공개 테스트 참여 안내</span><span data-en>Join the closed test</span></div></div>
+  </div>
+
+  <div class="lead">
+    <div data-ko>모아모아 테스트 때 정말 고마웠습니다. 새 퍼즐 게임 <b>「포도」</b> 테스트를 한 번 더 부탁드려요.<br>
+      구글 플레이에 올리려면 <b>테스터 12명이 14일 동안</b> 참여해 있어야 합니다. <b>아래 단추를 차례로 누르면</b> 1분이면 끝나요.</div>
+    <div data-en>Thank you for testing Moa Moa! Could you help me test my new puzzle game <b>Podo</b>?<br>
+      Google Play needs <b>12 testers opted in for 14 days</b>. Just <b>tap the buttons below in order</b> — it takes a minute.</div>
+  </div>
+
+  <!-- 0. 카톡 안이면 크롬으로 -->
+  <div class="step hi" id="s0" style="display:none">
+    <span class="num">!</span><span class="st"><span data-ko>먼저 크롬으로 열어 주세요</span><span data-en>First, open this in Chrome</span></span>
+    <p class="desc" data-ko>지금은 카톡 안에서 열려 있어서 구글 로그인이 안 될 수 있어요. 아래 단추를 누르면 크롬으로 넘어갑니다.</p>
+    <p class="desc" data-en>You're inside the chat app, where Google sign-in often fails. Tap below to switch to Chrome.</p>
+    <a class="btn" id="toChrome" href="#"><span data-ko>크롬으로 열기</span><span data-en>Open in Chrome</span><span class="arw">↗</span></a>
+    <p class="desc" style="font-size:13px" data-ko>단추가 안 되면: 화면 오른쪽 위(또는 아래) <b>⋮</b> → <b>「다른 브라우저로 열기」</b></p>
+    <p class="desc" style="font-size:13px" data-en>If the button doesn't work: tap <b>⋮</b> (top or bottom right) → <b>"Open in another browser"</b>.</p>
+  </div>
+
+  <!-- 1. 테스터 되기 -->
+  <div class="step" id="s1">
+    <span class="num">1</span><span class="st"><span data-ko>「테스터 되기」 누르기</span><span data-en>Tap "Become a tester"</span></span>
+    <p class="desc" data-ko>아래 단추를 누르면 구글 플레이 테스트 페이지가 열립니다. 거기서 파란 단추를 눌러 주세요.</p>
+    <p class="desc" data-en>Tap below to open the Google Play test page, then tap the blue button there.</p>
+    <a class="btn" id="toTest" href="https://play.google.com/apps/testing/kr.podo.fivefires"><span data-ko>테스트 페이지 열기</span><span data-en>Open the test page</span><span class="arw">→</span></a>
+    <div class="shot"><span data-ko>열린 페이지에서 이 단추를 누르세요 →</span><span data-en>On that page, tap this →</span> <span class="fake"><span data-ko>테스터 되기</span><span data-en>BECOME A TESTER</span></span></div>
+  </div>
+
+  <!-- 2. 설치 -->
+  <div class="step" id="s2">
+    <span class="num">2</span><span class="st"><span data-ko>설치하기</span><span data-en>Install</span></span>
+    <p class="desc" data-ko>「테스터 되기」를 누르면 <b>같은 페이지 가운데쯤</b>에 <b>작은 파란 글씨 링크</b>가 생깁니다. 글씨가 작아서 놓치기 쉬워요 — 아래 그림의 동그라미 친 자리입니다.</p>
+    <p class="desc" data-en>After "Become a tester", a <b>small blue text link</b> appears <b>in the middle of the same page</b>. It's easy to miss — it's the circled spot below.</p>
+    <!-- 테스트 페이지 흉내 — 실제로는 큰 단추가 아니라 문장 속 작은 링크입니다 -->
+    <div class="mock">
+      <div class="mtop"><span class="mdot"></span>play.google.com</div>
+      <div class="mbody">
+        <div class="mh" data-ko>테스터가 되었습니다</div>
+        <div class="mh" data-en>You are now a tester</div>
+        <div class="mt" data-ko>업데이트가 나오면 받게 됩니다. 테스트 버전을 설치하려면</div>
+        <div class="mt" data-en>You'll get updates when they're available. To install the test version,</div>
+        <div class="mt"><span class="mlink"><span data-ko>Google Play에서 다운로드</span><span data-en>download it on Google Play</span></span><span data-ko>하세요.</span><span data-en>.</span></div>
+        <div class="mt dim" data-ko>테스트를 그만두려면 「테스트 나가기」…</div>
+        <div class="mt dim" data-en>To leave the test, "Leave the program"…</div>
+      </div>
+      <div class="mcall"><span data-ko>↑ 이 작은 파란 글씨를 누르세요</span><span data-en>↑ Tap this small blue text</span></div>
+    </div>
+    <p class="desc" data-ko>그러면 플레이 스토어가 열립니다 → <span class="fake g">설치</span></p>
+    <p class="desc" data-en>The Play Store opens → <span class="fake g">Install</span></p>
+    <p class="desc" style="margin-top:14px" data-ko><b>링크가 안 보이면</b> — 「테스터 되기」를 누른 뒤라면 아래 단추로 바로 가도 됩니다.</p>
+    <p class="desc" style="margin-top:14px" data-en><b>Can't find the link?</b> Once you've tapped "Become a tester", this button works too.</p>
+    <a class="btn alt" href="https://play.google.com/store/apps/details?id=kr.podo.fivefires"><span data-ko>플레이 스토어에서 바로 열기</span><span data-en>Open in the Play Store</span><span class="arw">→</span></a>
+  </div>
+
+  <!-- 3. 14일 -->
+  <div class="step" id="s3">
+    <span class="num">3</span><span class="st"><span data-ko>14일 동안 그대로 두기</span><span data-en>Stay opted in for 14 days</span></span>
+    <p class="desc" data-ko>테스트 참여를 해제하지만 말아 주세요. 가끔 한두 판 해 주시면 더 좋아요.</p>
+    <p class="desc" data-en>Just don't leave the test. A board or two now and then helps a lot.</p>
+  </div>
+
+  <ul class="note">
+    <li data-ko><b>모아모아 때와 같은 구글 계정</b>이어야 해요. 계정이 여러 개면 크롬 오른쪽 위 동그란 프로필을 눌러 바꿔 주세요.</li>
+    <li data-en>Use <b>the same Google account you used for Moa Moa</b>. To switch, tap the round profile icon at the top right of Chrome.</li>
+    <li data-ko>「항목을 찾을 수 없습니다」가 나오면 계정이 다르거나, 잠시 뒤에 다시 열면 돼요.</li>
+    <li data-en>"Item not found" means a different account — or just try again in a little while.</li>
+    <li data-ko>결제는 없어요. 장이 바뀔 때 광고가 나오고, 막히면 광고를 보고 힌트와 해답을 받을 수 있어요.</li>
+    <li data-en>No purchases. Ads play between chapters; watch an ad for hints or a solution when stuck.</li>
+    <li data-ko>불편한 점은 카톡으로 편하게 말씀해 주세요. 고맙습니다! — makemtothemoon</li>
+    <li data-en>Any problems — just message me. Thank you! — makemtothemoon</li>
+  </ul>
+  <div class="url">play.google.com/apps/testing/kr.podo.fivefires</div>
+  <div class="foot">포도 · Podo</div>
+</div>
+<script>
+(function () {
+  var TEST = "https://play.google.com/apps/testing/kr.podo.fivefires";
+  var ua = navigator.userAgent || "";
+  var inKakao = /KAKAOTALK/i.test(ua);
+  var inApp = inKakao || /FBAN|FBAV|Instagram|Line\/|NAVER|DaumApps|wv\)/i.test(ua);
+  try { if (/^en/i.test(navigator.language || "") && !/^ko/i.test(navigator.language || "")) document.body.classList.add("en"); } catch (e) {}
+  if (/[?&]lang=en/.test(location.search)) document.body.classList.add("en");
+  var lb = document.getElementById("lang");
+  function paintLang() { lb.textContent = document.body.classList.contains("en") ? "한국어" : "English"; }
+  lb.onclick = function () { document.body.classList.toggle("en"); paintLang(); };
+  paintLang();
+  if (inApp) {
+    document.getElementById("s0").style.display = "";
+    document.getElementById("s1").classList.add("done");
+    var a = document.getElementById("toChrome");
+    if (inKakao) a.href = "kakaotalk://web/openExternal?url=" + encodeURIComponent(location.href.split("#")[0]);
+    else a.href = "intent://" + location.href.replace(/^https?:\/\//, "").split("#")[0] +
+      "#Intent;scheme=https;package=com.android.chrome;end";
+  } else {
+    document.getElementById("s1").classList.add("hi");
+  }
+})();
+</script>
+</body></html>
